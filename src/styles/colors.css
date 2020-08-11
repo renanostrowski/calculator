@@ -1,0 +1,17 @@
+:root {
+  --color-background: #A7A1A1;
+  --color-background-calc: #3F3B3B;
+
+  --color-button: #494646;
+  --color-text: #FFFFFF;
+
+  --color-history: #3F3B3B;
+
+  --color-display: #3E3C3C;
+  --color-sombra: #000000;
+
+  --color-header: #5A5555;
+
+  --color-button-ac: #F4442E;
+  --color-button-enter: #E25822;
+}

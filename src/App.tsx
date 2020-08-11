@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './styles/reset.css';
+import './styles/colors.css';
+
+
+import WrapperCalc from './components/WrapperCalc';
+import HistoryCalc from './components/HistoryCalc';
+import Teclado from './components/Teclado';
+import DisplayCalc from './components/DisplayCalc';
+import HeaderCalc from './components/HeaderCalc';
+import LogoCalc from './components/LogoCalc';
+import TitleCalc from './components/TitleCalc';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WrapperCalc>
+        <HeaderCalc>
+          <LogoCalc />
+          <TitleCalc>Calculator Math</TitleCalc>
+        </HeaderCalc>
+        <HistoryCalc>6 + 7</HistoryCalc>
+        <DisplayCalc />
+        <Teclado />
+      </WrapperCalc>
     </div>
   );
 }
